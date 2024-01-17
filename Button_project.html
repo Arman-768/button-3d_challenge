@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+
+         body{
+            background-color: rgb(177, 216, 178);
+         }
+        button{
+            
+            font-family:'Roboto', sans-serif;
+            font-weight: bold;
+            border-radius: 40px;
+            border: none;
+            color: #629f3c;
+            text-align: center;
+            font-size: 40px;
+            padding: 16px;
+            width: 220px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 36px; 
+            box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+            display: inline-block;
+            position: relative;
+            left: 590px;
+            transition: 0.5s;
+            
+        }
+
+        button:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;  
+            top: 14px;
+            right: -20px;
+            transition: 0.5s;
+}
+       button:hover{
+            padding-right: 24px;
+            padding-left:8px;
+}
+
+       button:hover:after {
+            opacity: 1;
+            right: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <button><span> Hover me!</span></button>
+</body>
+</html>
